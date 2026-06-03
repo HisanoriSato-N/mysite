@@ -1,0 +1,10 @@
+services:
+  gmail-draft-agent:
+    build: .
+    env_file:
+      - .env
+    volumes:
+      - ./credentials.json:/app/credentials.json:ro
+      - ./token.json:/app/token.json
+      - ./data:/app/data
+    restart: unless-stopped
