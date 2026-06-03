@@ -1,0 +1,14 @@
+{
+  "name": "mysite-ai-news-notifier",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "ai-news": "node scripts/ai-news-notifier.mjs",
+    "ai-news:dry-run": "DRY_RUN=true node scripts/ai-news-notifier.mjs",
+    "test": "node tests/ai-news-notifier.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
